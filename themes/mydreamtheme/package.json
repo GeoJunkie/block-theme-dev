@@ -1,0 +1,23 @@
+{
+  "name": "mydreamtheme",
+  "version": "1.0.0",
+  "description": "Theme built from Create Block Themes courses",
+  "main": "index.js",
+  "scripts": {
+    "wp-env": "wp-env",
+    "install-plugins": "wp-env run cli wp plugin install --activate create-block-theme"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeoJunkie/block-theme-dev.git"
+  },
+  "author": "Mike Straw",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/GeoJunkie/block-theme-dev/issues"
+  },
+  "homepage": "https://github.com/GeoJunkie/block-theme-dev#readme",
+  "devDependencies": {
+    "@wordpress/env": "^10.3.0"
+  }
+}

@@ -4,8 +4,13 @@
   "description": "Theme built from Create Block Themes courses",
   "main": "index.js",
   "scripts": {
+    "start": "wp-env start",
+    "stop": "wp-env stop",
     "wp-env": "wp-env",
-    "install-plugins": "wp-env run cli wp plugin install --activate create-block-theme"
+    "setup": "npm-run-all --sequential setup:**",
+    "setup:start": "wp-env start",
+    "setup:install-plugins": "wp-env run cli wp plugin install --activate create-block-theme",
+    "setup:activate-theme": "wp-env run cli wp theme activate mydreamtheme"
   },
   "repository": {
     "type": "git",
@@ -18,6 +23,7 @@
   },
   "homepage": "https://github.com/GeoJunkie/block-theme-dev#readme",
   "devDependencies": {
-    "@wordpress/env": "^10.3.0"
+    "@wordpress/env": "^10.3.0",
+    "npm-run-all": "^4.1.5"
   }
 }
